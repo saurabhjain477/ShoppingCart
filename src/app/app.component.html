@@ -1,0 +1,20 @@
+<header class="header">
+  <a href="#" class="logo">
+    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+  </a>
+  <div class="header-right">
+    <div>
+      <a class="cart-item" [routerLink]="'/cart'" routerLinkActive="active">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+        <!-- <fa-icon [icon]="['fas', 'shopping-cart']"></fa-icon> -->
+        <span class='badge badge-warning' id='lblCartCount'>{{totalCartItems}}</span>
+      </a>  
+    </div>
+    <div><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>    
+  </div>
+</header>
+
+<div class="main-content">
+  <router-outlet></router-outlet>
+  <!-- <app-shopping-list (addedItemToCart)=addedItemsToCart($event)></app-shopping-list> -->
+</div>

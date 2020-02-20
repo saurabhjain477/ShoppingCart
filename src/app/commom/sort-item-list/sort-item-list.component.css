@@ -1,0 +1,21 @@
+.sort-container {
+    width: 80%;
+    padding: 20px;
+}
+
+.sort-column {
+    width: 25%;
+    max-width: 150px;
+    display: inline-block;
+
+}
+button {
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.active {
+    color: blue;
+    text-decoration: underline blue;
+}

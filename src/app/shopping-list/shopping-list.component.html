@@ -1,0 +1,24 @@
+<div class="main-container">
+  <div class="side-filter">
+    <app-range-filter [minRange]="10" [maxRange]="900" (filterRangeChange)="filterRangeChange($event)"></app-range-filter>
+  </div>
+  <div class="side-container">
+    <div class="sort">
+      <app-sort-item-list (sortBy)="sortListItems($event)"></app-sort-item-list>
+    </div>
+    <div class="card-container">    
+      <div class="card" *ngFor="let cartdata of shopingListItem">
+          <div class="image-container">
+            <img src="{{cartdata.img_url}}" alt="{{cartdata.name}}" />
+          </div>
+          <p class="item-name">{{cartdata.name}}</p>
+          <p class="item-price">
+            <span class="discounted-price">{{getDiscountedPrice(cartdata.price, cartdata.discount)}}</span> 
+            <span class="price">{{cartdata.price}}</span>
+            <span class="discount">{{cartdata.discount}}% off</span>
+          </p>
+          <div style="text-align: center;"><button (click)="addedShopItemList(cartdata)" class="add-to-cart-btn">Add to Cart</button></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="sort-container">
+    <div class="sort-column">
+        <b>Sort By</b>
+    </div>
+    <div class="sort-column">
+        <button [ngClass]="{'active':sortOn === 'PHL'}" (click)="sort('PHL')">Price -- High Low</button>
+    </div>
+    <div class="sort-column">
+        <button [ngClass]="{'active':sortOn === 'PLH'}" (click)="sort('PLH')">Price -- Low High </button>
+    </div>
+    <div class="sort-column">
+        <button [ngClass]="{'active':sortOn === 'DISC'}" (click)="sort('DISC')">Discount</button>
+    </div>
+</div>

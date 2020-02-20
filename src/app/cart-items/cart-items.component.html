@@ -1,0 +1,48 @@
+<div class="cart-main-container">
+  <div *ngIf="cartItemList.length > 0" class="right-container">
+    <div class="card-container">
+      <div class="cart-cart" *ngFor="let cartData of cartItemList">
+        <div class="img-container">
+          <img src="{{cartData.img_url}}" alt="{{cartData.name}}" />
+        </div>
+        <div class="content">        
+            <p>{{cartData.name}}</p>
+            <div class="item-desc">
+              <p class="item-price">                
+                <span class="discounted-price">{{ cartData.price - (cartData.price * cartData.discount/100)}}</span> 
+                <span class="price">{{cartData.price}}</span>
+                <span class="discount">{{cartData.discount}}% off</span>
+              </p>
+              <div class="button-container">
+                <button [disabled]="cartData.count === 1" (click)="incDecItem(cartData.id,'dec')"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <span>
+                  {{cartData.count}}
+                </span>
+                <button (click)="incDecItem(cartData.id,'inc')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+              
+              <!-- <div class="button-container">
+                
+              </div> -->
+              <div class="remove-container">
+                <button (click)="removeItem(cartData.id)">Remove</button>
+              </div>
+            </div>
+        </div>        
+      </div>      
+    </div>
+  </div>
+  <div *ngIf="cartItemList.length > 0" class="left-container">
+    <div class="total-item-cost">
+      <h4>PRICE DETAILS</h4>
+      <hr/>
+      <p *ngFor="let item of cartItemList; ">
+        <span><b>{{item.name}} * {{item.count}}</b> : </span>
+        <span>{{ (item.price - (item.price * item.discount/100)) * item.count}}</span>
+      </p>
+      <hr/>
+      <p><b>Total Payable: </b> {{getTotalPrice(cartItemList)}}</p>
+    </div>
+  </div>
+  <p *ngIf="cartItemList.length === 0">No item added in cart</p>
+</div>

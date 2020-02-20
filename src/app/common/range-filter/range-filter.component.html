@@ -1,0 +1,10 @@
+<div class="web-filter-contailer">
+  <h4>Filters</h4>
+  <p>Min Value: {{minRangeValue}}</p>
+  <p>Max Value: {{maxRangeValue}}</p>
+
+  <div class='multi-range'>
+    <input type='range' class="slider1" #minRangeChange [min]='minRange' [max]='maxRange' [value]="minRangeValue" (input)="minRangeMethod(minRangeChange)" [disabled]="minDisable" />
+    <input type='range' class="slider2" #maxRangeChange [min]='minRange' [max]='maxRange' [value]="maxRangeValue" (input)="maxRangeMethod(maxRangeChange)" [disabled]="maxDisable"/>
+  </div>
+</div>

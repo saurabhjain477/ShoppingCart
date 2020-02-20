@@ -1,0 +1,117 @@
+.cart-main-container {
+    display: inline-block;
+    width: 100%;
+}
+.left-container {
+    width: 30%;
+    float: left;
+    margin-top: 20px;
+}
+.right-container {
+    width: 70%;
+    float: left;
+}
+
+.card-container { 
+    width: 100%;
+}
+.cart-cart {
+    margin: 20px;
+    padding: 20px 10px;
+    border: 1px solid darkgrey;
+    display: inline-block;
+    width: 90%;
+}
+
+.img-container {
+    display: inline-block;
+    width: 15%;
+}
+.content {
+    display: inline-block;
+    width: 85%;
+    vertical-align: top;
+}
+.cart-cart img {
+    width: 110px;
+    max-width: 110px;
+    float: left;
+    margin: 10px;
+}
+
+.item-price {
+    font-weight: 600;
+    display: inline-block;
+    width: 30%;
+}
+.button-container {
+    display: inline-block;
+    width: 30%;
+}
+.button-container button {
+    padding: 3px 8px;
+    border: 1px solid grey;
+    border-radius: 11px;
+}
+.button-container span {
+    padding: 3px 8px;
+    margin: 0 10px;
+    border: 1px solid grey;
+}
+.remove-container {
+    display: inline-block;
+    width: 30%;
+}
+.remove-container button {
+    padding: 5px;
+    font-weight: 600;
+    background: none;
+    border: none;
+}
+.discounted-price {    
+    padding-right: 15px;  
+}
+.price {
+    padding-right: 15px;  
+    color: grey;
+    text-decoration:line-through
+}
+.discount {
+    padding-right: 15px;  
+    color: green;
+}
+
+.total-item-cost {
+    width: 250px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+@media only screen and (max-width: 600px) {
+    .img-container {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        vertical-align: top;
+    }
+    .item-price {
+        width: 100%;
+    }
+    .button-container {
+        width: 100%;
+    }
+    .remove-container {
+        width: 100%;
+    }
+    .left-container {
+        margin: 20px;
+        padding: 20px 10px;
+        border: 1px solid darkgrey;
+        display: inline-block;
+        width: 90%;
+    }
+    .right-container {
+        width: 100%;
+    }
+  }

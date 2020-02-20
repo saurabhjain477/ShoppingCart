@@ -1,0 +1,50 @@
+.header {
+    overflow: hidden;
+    background-color: #337ab7;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.cart-item {
+    padding-left: 10px;
+    z-index: 100;
+    color: white;
+}
+.logo {
+    color: yellow;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right div {
+    padding-right: 50px;
+    color:white;
+    float: right;
+}
+
+.main-content {
+    position: relative;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}

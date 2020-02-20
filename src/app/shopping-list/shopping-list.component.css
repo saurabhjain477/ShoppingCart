@@ -1,0 +1,55 @@
+.main-container {
+    background-color: #eef1f3;
+    display: inline-block;
+    width: 100%;
+}
+.side-filter {
+    width: 15%;
+    float: left;
+}
+.side-container {
+    width: 85%;
+    float: left;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    width: 100%;
+    border-left: 1px #544f4f solid;
+    justify-content: center;
+}
+
+.card-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    font-size: 30px;
+ }
+
+.image-container img {
+      width: 100%;
+}
+.item-price {
+    font-weight: 600;
+}
+.discounted-price {    
+    padding-right: 15px;  
+}
+.price {
+    padding-right: 15px;  
+    color: grey;
+    text-decoration:line-through
+}
+.discount {
+    padding-right: 15px;  
+    color: green;
+}
+button.add-to-cart-btn {
+    padding: 10px;
+    background-color: #e8e808;
+    border: 1px solid #e8e808;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
